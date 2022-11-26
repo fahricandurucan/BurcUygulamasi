@@ -1,4 +1,5 @@
-import 'package:burc_uygulamasi/burc.dart';
+import 'package:burc_uygulamasi/BurcDetay.dart';
+import 'package:burc_uygulamasi/model/burc.dart';
 import 'package:burc_uygulamasi/data/Strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -27,29 +28,17 @@ class BurcListesi extends StatelessWidget {
                   child: Card(
                     elevation: 5,
                     shadowColor: Colors.pinkAccent,
-                    child: Row(
-                      children: [
-
-                        SizedBox(
-                          height: 50,
-                          child: Image.asset(burc.burc_kucuk_resim),
-                        ),
-                        Container(
-                          width: 20,
-                        ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(burc.burc_ad,style: TextStyle(fontSize: 20),),
-                            Text(burc.burc_tarih,style: TextStyle(fontSize: 16),)
-                          ],
-                        ),
-                        Spacer(),
-                        IconButton(
-                          onPressed: (){},
-                          icon: Icon(Icons.arrow_forward_ios,color: Colors.pink,),
-                        ),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: ListTile(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => BurcDetay(secilenBurc: burc)));
+                        },
+                        leading: Image.asset(burc.burc_kucuk_resim),
+                        title: Text(burc.burc_ad,style: TextStyle(fontSize: 20),),
+                        subtitle: Text(burc.burc_tarih),
+                        trailing: Icon(Icons.arrow_forward_ios_outlined,color: Colors.pink,),
+                      ),
                     ),
                   ),
                 ),
