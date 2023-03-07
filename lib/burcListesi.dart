@@ -34,7 +34,7 @@ class BurcListesi extends StatelessWidget {
                         onTap: (){
                           Navigator.push(context, MaterialPageRoute(builder: (context) => BurcDetay(secilenBurc: burc)));
                         },
-                        leading: Image.asset(burc.burc_kucuk_resim),
+                        leading: Image.asset("images/${burc.burc_kucuk_resim}"),
                         title: Text(burc.burc_ad,style: TextStyle(fontSize: 20),),
                         subtitle: Text(burc.burc_tarih),
                         trailing: Icon(Icons.arrow_forward_ios_outlined,color: Colors.pink,),
@@ -53,8 +53,10 @@ class BurcListesi extends StatelessWidget {
     List<Burc> gecici = [];
     for(int i = 0;i<12;i++){
       Burc eklenecekBurc = Burc(Strings.burc_adlari[i], Strings.burc_tarihleri[i],
-          Strings.burc_detayi[i], (Strings.burc_adlari[i].toLowerCase()+ "${i+1}.png"),
-          (Strings.burc_adlari[i].toLowerCase()+ "_buyuk${i+1}.png"));
+          Strings.burc_detayi[i], ("${Strings.burc_adlari[i].toLowerCase()}${i+1}.png"),
+          ("${Strings.burc_adlari[i].toLowerCase()}_buyuk${i+1}.png"));
+      print("${Strings.burc_adlari[i].toLowerCase()}${i+1}.png");
+      print("${Strings.burc_adlari[i].toLowerCase()}_buyuk${i+1}.png");
       gecici.add(eklenecekBurc);
     }
     return gecici;

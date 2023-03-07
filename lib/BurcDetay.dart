@@ -38,7 +38,7 @@ class _BurcDetayState extends State<BurcDetay> {
 
             backgroundColor: appbarRengi,
             flexibleSpace: FlexibleSpaceBar(
-              background: Image.asset(widget.secilenBurc.burc_buyuk_resim,fit: BoxFit.cover,),
+              background: Image.asset("images/${widget.secilenBurc.burc_buyuk_resim}",fit: BoxFit.cover,),
               title: Text(widget.secilenBurc.burc_ad + "Burcu ve Özellikleri"),
               centerTitle: true,
             ),
@@ -57,7 +57,7 @@ class _BurcDetayState extends State<BurcDetay> {
   }
 
   void appbarRenkAyarla() async{ //appar rengi değişken hale getirdik(palette_generator kütüphanesini kullanarak)
-    generator = await PaletteGenerator.fromImageProvider(AssetImage(widget.secilenBurc.burc_buyuk_resim));
+    generator = await PaletteGenerator.fromImageProvider(AssetImage("images/${widget.secilenBurc.burc_buyuk_resim}"));
     setState(() {
       appbarRengi = generator.dominantColor!.color;
     });

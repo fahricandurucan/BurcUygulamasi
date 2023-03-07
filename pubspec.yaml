@@ -63,31 +63,31 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/
-    - boga2.png
-    - boga_buyuk2.png
-    - koc1.png
-    - koc_buyuk1.png
-    - boga2.png
-    - ikizler3.png
-    - ikizler_buyuk3.png
-    - yengec4.png
-    - yengec_buyuk4.png
-    - aslan5.png
-    - aslan_buyuk5.png
-    - basak6.png
-    - basak_buyuk6.png
-    - terazi7.png
-    - terazi_buyuk7.png
-    - akrep8.png
-    - akrep_buyuk8.png
-    - yay9.png
-    - yay_buyuk9.png
-    - oglak10.png
-    - oglak_buyuk10.png
-    - kova11.png
-    - kova_buyuk11.png
-    - balik12.png
-    - balik_buyuk12.png
+#    - boga2.png
+#    - boga_buyuk2.png
+#    - koc1.png
+#    - koc_buyuk1.png
+#    - boga2.png
+#    - ikizler3.png
+#    - ikizler_buyuk3.png
+#    - yengec4.png
+#    - yengec_buyuk4.png
+#    - aslan5.png
+#    - aslan_buyuk5.png
+#    - basak6.png
+#    - basak_buyuk6.png
+#    - terazi7.png
+#    - terazi_buyuk7.png
+#    - akrep8.png
+#    - akrep_buyuk8.png
+#    - yay9.png
+#    - yay_buyuk9.png
+#    - oglak10.png
+#    - oglak_buyuk10.png
+#    - kova11.png
+#    - kova_buyuk11.png
+#    - balik12.png
+#    - balik_buyuk12.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
